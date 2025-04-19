@@ -1,4 +1,4 @@
-package med.voll.api.controller;
+package med.voll.api.paciente.controller;
 
 import med.voll.api.paciente.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,6 +39,7 @@ public class PacienteController {
     @DeleteMapping("/{id}")
     @Transactional
     public void remover(@PathVariable Long id){
-        repository.deleteById(id);
+        var paciente = repository.getReferenceById(id);
+        paciente.excluir();
     }
 }
