@@ -1,7 +1,6 @@
-package med.voll.api.paciente.controller;
+package med.voll.api.controller;
 
-import med.voll.api.medico.DadosDetalhamentoMedico;
-import med.voll.api.paciente.*;
+import med.voll.api.domain.paciente.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
